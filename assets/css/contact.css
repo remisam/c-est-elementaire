@@ -1,0 +1,526 @@
+:root {
+  --primary-color:#000000; 
+  --secondary-color :#14213D; 
+  --nav-text-color :#FCA311;
+  --darkligth-color :#E5E5E5;
+  --light-color : #FFFFFF;
+}
+ 
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+ 
+@font-face {
+font-family: 'Albertus Medium';
+font-style: normal;
+font-weight: 400;
+src: local('Albertus Medium'), url('https://fonts.cdnfonts.com/s/13715/Albertus Medium Regular.woff') format('woff');
+}
+ 
+.flex-container {
+display: flex;
+background-color:var(--nav-text-color);
+justify-content: space-evenly;
+align-items: center;
+box-shadow: 0px 0px 5px 5px var(--nav-text-color);
+height: 15vh;
+width: 100%;
+}
+ 
+.flex-container a {
+font-family: 'Albertus Medium';
+text-decoration: none;
+color:var(--primary-color);
+font-size: 24px;
+display: flex;
+flex-wrap: wrap;
+}
+ 
+.flex-container a:hover {
+color: var(--darkligth-color);  
+ 
+}
+.flex-logo img {
+ 
+height: 15vh; 
+}
+ 
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: -11%;
+  padding: 0;
+  flex-wrap: wrap;
+  }
+ 
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  display: none;
+}
+ 
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+ 
+#menu-toggle {
+  display: none;
+}
+ 
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  margin-bottom: 2px;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  z-index: 100;
+}
+ 
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+ 
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+ 
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+ 
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+ 
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+  
+/*CONTACT*/
+
+
+  body {
+      background: url(/assets/img/paper_fibers.png);
+  }
+  
+  
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+  
+.top-contact .ligne {
+  margin-top: 50px;
+}
+
+  .top-contact hr {
+    margin-left:40px ;
+    margin-right:40px ;
+  }
+  .citation p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    
+  }
+
+  .present p {
+    text-align: left;
+    font-size: 22px;
+    margin-top: 60px ;
+    padding-left: 40px;
+    
+  }
+  
+  /* CARTE POSTAL */
+  
+
+  
+  .citation p {
+    text-align: center;
+    font-size: 18px;
+    
+  }
+  
+  /* CARTE POSTAL */
+  
+  .carte-postal {
+  border-top: 20px double #952a1e;
+  border-right: 20px double #952a1e;
+  border-bottom: 20px double #952a1e;
+  border-left: 20px double #952a1e;
+  background: linear-gradient(to top,#efeadc ,#bcb8aa) ;
+  display: flex;
+  box-shadow: -3px 6px 30px 4px rgba(0,0,0,0.87);
+-webkit-box-shadow: -4px 6px 30px 4px rgba(0,0,0,0.87);
+-moz-box-shadow: -3px 6px 30px 4px rgba(0,0,0,0.87);
+  
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 80px;
+  margin-bottom: 300px;
+  filter: grayscale(53%) sepia(22%) brightness(93%) saturate(129%) contrast(122%) invert(14%);
+  -webkit-filter: grayscale(53%) sepia(22%) brightness(93%) saturate(129%) contrast(122%) invert(14%);
+  -moz-filter: grayscale(53%) sepia(22%) brightness(93%) saturate(129%) contrast(122%) invert(14%);
+ 
+  
+  }
+  
+  /* PARTIE GAUCHE */
+  
+  .postal-1 {
+      display: flex;
+      width: 600px;
+      flex-direction: column;
+      
+      
+  }
+  
+  .postal-1 img {
+  height: 300px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: double 8px  rgba(0,0,0,0.95);
+      
+  }
+  
+  
+  .postal-1 hr {
+    display: flex;
+      width: 200px;
+      margin-top: 20px;
+  }
+  
+  .postal-1 p {
+     padding-left:30px;
+    padding-right:30px;
+    font-size:20px;
+    text-align: justify;
+  }
+
+  .author p{
+    text-align: center;
+    
+  }
+  
+  /* PARTIE DROITE */
+  
+  .formulaire {
+    border-left: 10px double #000000;
+      width: 980px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+  
+  .tampon-postal{
+      display: flex;
+      justify-content: space-around;
+     
+  
+  }
+  
+  .adressepostal {
+    width: 100%;
+  }
+  
+  #form {
+      display: flex;
+      flex-direction: column;
+      margin: 3rem;
+    }
+    
+  input {
+   display: flex;
+   width: 500px;
+   height: 30px;
+      
+    }
+  
+  input {
+  display: flex;
+  background-color: transparent;
+  }
+  
+    .inputname   {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border: 1.9px transparent;
+      width: 100%;
+      max-width: 500px;
+      border-bottom: 2px dotted #000000;
+      
+      
+    }
+    
+    .inputmail {        
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border: 1.7px transparent;
+      width: 100%;
+      max-width: 500px;
+      border-bottom: 2px dotted #000000;
+      
+    }
+    
+    textarea {
+      background-color: transparent;
+      background-image: url(/assets/img/ligne3.png);
+      margin-top: 25px;
+      width: 590px ;
+      border: 1.7px transparent;
+      line-height: 40px;
+      font-size: 18px;
+      resize: none;
+      
+    }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: flex;
+    margin-top: 25px;
+    align-self: flex-end;
+    justify-content: center;
+    height: 40px;
+    align-items:center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #000000;
+    color: #E5E5E5;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px var(--darkligth-color);}
+
+ button:hover {
+   background-color:#952a1e ;
+ }
+
+ /* FOOTER */
+
+
+ #footer {
+ 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--nav-text-color);
+  height: 10rem;
+  display: flex;
+  line-height: 1.5rem;
+  }
+   
+  #footer0 {
+  position: relative;
+   
+  }
+   
+  #content-wrap {
+  padding-bottom: 2.5rem;
+  }
+   
+   
+  .logo-footer {
+  margin: auto;
+  height: 140px;
+   
+  }
+   
+  .footer-box {
+  margin: auto;
+   
+  }
+   
+  .footer-box li a {
+  color: var(--primary-color);
+  text-decoration: none;
+   
+  }
+   
+  .footer-box li a:hover {
+  color: var(--darkligth-color);
+  }
+   
+  .boxlogo {
+  display: flex;
+  }
+   
+  .footer-copyright {
+  color: var(--primary-color)
+  }
+   
+   
+   
+  @media (max-width: 1000px) {
+   
+   
+   
+   .flex-container { 
+        display: flex;
+        background-color:var(--nav-text-color);
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0px 0px 5px 5px var(--nav-text-color);
+        height: 15vh;
+        width: 100%;
+    }
+    .flex-container a {
+      font-family: 'Albertus Medium';
+      text-decoration: none;
+      color:var(--nav-text-color);
+      font-size: 16px;
+      display: flex;
+      flex-direction: row;
+      background-color:rgba(255, 255, 255, 0);
+      font-size: 20px;
+      flex-wrap: wrap;
+    }
+    .flex-logo img {
+      display: flex;
+      align-items: center;
+      height: 16vh;
+      flex-wrap:wrap;
+    }
+   
+   
+    .menu-journal, .menu-carnet, .menu-about, .menu-contact {
+      display: none;
+     }
+   
+    .menu-button-container {
+      display: flex;
+      margin-bottom: 8%;    
+   
+     }
+   
+   .menu {
+      position: absolute;
+      top: 0;
+      margin-top: px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+     }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+     }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+     }
+   
+  .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+     }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+     }
+   
+  #footer {
+   font-size: 0.8rem;
+   line-height: 1.5em;
+   display: flex;
+   flex-wrap: wrap;
+   
+   }
+
+
+
+    /* RESPONSIVE PART */
+
+@media screen and ( max-width: 1340px) {
+  .carte-postal{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  } 
+  .formulaire {
+    border-top: 10px double #000000;
+    border-left: none;
+    width: 100%;
+    
+  }
+
+  .postal-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .tampon-postal {
+    width: 100%;
+    
+   
+    }
+.adressepostal{
+  margin-top: 5px;
+}
+  
+    
+}
+
+@media screen and (max-width:700px){
+  textarea {
+    width: 100%;
+  }
+  .citation {
+   margin-left: 10px;
+   margin-right: 10px;
+  }
+  .postal-1 img {
+    height: 200px;
+  }
+
+  .postal-1 p {
+    font-size: 18px;
+  }
+}
